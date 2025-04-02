@@ -1,4 +1,6 @@
-import React from 'react';
+"use client"; // Required for interactive components
+
+import Link from "next/link";
 
 const Navbar = () => {
   return (
@@ -6,14 +8,22 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto flex justify-between items-center text-black">
         {/* Logo on the left */}
         <div className="flex items-center">
-          <a href="/" className="text-lg font-light tracking-wider">FILIPPA A. H.</a>
+          <Link href="/" className="text-lg font-light tracking-wider">
+            FILIPPA A. H.
+          </Link>
         </div>
 
         {/* Links on the right */}
         <div className="flex items-center space-x-8">
-          <a href="/work" className="text-sm font-light hover:underline">Work</a>
-          <a href="/about" className="text-sm font-light hover:underline">About</a>
-          <a href="/contact" className="text-sm font-light hover:underline">Contact</a>
+          <Link href="/work" className="text-sm font-light hover:underline">
+            Work
+          </Link>
+          <Link href="/about" className="text-sm font-light hover:underline">
+            About
+          </Link>
+          <Link href="/contact" className="text-sm font-light hover:underline">
+            Contact
+          </Link>
         </div>
       </div>
     </nav>
