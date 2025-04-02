@@ -12,12 +12,11 @@ const ImageGrid = () => {
     <div className="max-w-4xl mx-auto px-4 py-12">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {gridItems.map((item) => (
-          <a key={item.id} href={item.url} className="block aspect-square">
-            <img 
-              src={`/api/placeholder/400/400`} 
-              alt={item.alt}
-              className="w-full h-full object-cover hover:opacity-80 transition-opacity duration-300"
-            />
+          <a key={item.id} href={item.url} className="block aspect-square bg-gray-200 hover:bg-gray-300 transition-colors duration-300">
+            {/* Placeholder div instead of potentially problematic image */}
+            <div className="w-full h-full flex items-center justify-center text-gray-500">
+              Image {item.id}
+            </div>
           </a>
         ))}
       </div>
