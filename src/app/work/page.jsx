@@ -1,4 +1,4 @@
-import Workgrid from "../components/Workgrid";
+import Workgrid from "../app/components/Workgrid";
 
 export default function WorkPage() {
   return (
