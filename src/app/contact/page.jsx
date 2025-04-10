@@ -5,7 +5,7 @@ const ContactPage = () => {
     <div className="max-w-6xl mx-auto px-4 py-16">
       <div className="flex flex-col md:flex-row items-center justify-center gap-12">
         <div className="w-full md:w-1/2 space-y-2">
-          <h1 className="text-3xl font-black tracking-wide text-black">Reach me at</h1>
+          <h1 className="text-3xl font-black tracking-wide text-black">Contact</h1>
           <div>
        <a
               href="tel:+4512345678"
