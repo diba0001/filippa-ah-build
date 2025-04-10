@@ -20,6 +20,8 @@ const ImageGrid = () => {
           </a>
         ))}
       </div>
+      <div>
+      </div>
     </div>
   );
 };
