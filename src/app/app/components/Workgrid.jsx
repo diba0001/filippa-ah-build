@@ -27,7 +27,7 @@ const ImageGrid = () => {
       id: 3,
       title: "Executive Wardrobe",
       subtitle: "Personal Styling",
-      imageSrc: "/images/YAS/250519_YAS_2DAGE20870.jpg",
+      imageSrc: "/images/yas/250519_YAS_2DAGE20870.jpg",
       url: "/project/personal-styling",
       alt: "Executive Wardrobe - Personal Styling Session",
       category: "Personal Styling"
