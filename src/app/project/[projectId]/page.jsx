@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState, useCallback } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import gsap from 'gsap';
@@ -12,6 +12,8 @@ const ProjectPage = ({ params }) => {
   const scrollWrapperRef = useRef(null);
   const sectionRef = useRef(null);
   const [imageErrors, setImageErrors] = useState(new Set());
+  const [imagesLoaded, setImagesLoaded] = useState(0);
+  const [isScrollTriggerReady, setIsScrollTriggerReady] = useState(false);
 
   const projectId = params.projectId;
 
@@ -50,32 +52,84 @@ const ProjectPage = ({ params }) => {
 
   const project = projectsData[projectId];
 
+  // Handle image load completion
+  const handleImageLoad = useCallback(() => {
+    setImagesLoaded(prev => {
+      const newCount = prev + 1;
+      // Check if all images (including error ones) are processed
+      if (newCount + imageErrors.size >= project?.images.length) {
+        setIsScrollTriggerReady(true);
+      }
+      return newCount;
+    });
+  }, [imageErrors.size, project?.images.length]);
+
+  const handleImageError = useCallback((imagePath, index) => {
+    setImageErrors(prev => {
+      const newErrors = new Set([...prev, index]);
+      // Check if all images (including loaded ones) are processed
+      if (imagesLoaded + newErrors.size >= project?.images.length) {
+        setIsScrollTriggerReady(true);
+      }
+      return newErrors;
+    });
+  }, [imagesLoaded, project?.images.length]);
+
+  // Setup ScrollTrigger after images are loaded
   useEffect(() => {
-    if (!scrollWrapperRef.current || !sectionRef.current) return;
+    if (!scrollWrapperRef.current || !sectionRef.current || !isScrollTriggerReady || !project) return;
 
-    const totalWidth = scrollWrapperRef.current.scrollWidth;
-    const horizontalScrollLength = totalWidth - window.innerWidth;
+    // Small delay to ensure DOM is fully updated
+    const timer = setTimeout(() => {
+      ScrollTrigger.refresh(); // Refresh first to clear any existing calculations
+      
+      const totalWidth = scrollWrapperRef.current.scrollWidth;
+      const horizontalScrollLength = totalWidth - window.innerWidth;
 
-    const ctx = gsap.context(() => {
-      gsap.to(scrollWrapperRef.current, {
-        x: -horizontalScrollLength,
-        ease: 'none',
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: 'top top',
-          end: () => `+=${totalWidth}`,
-          pin: true,
-          scrub: true,
-        }
-      });
-    }, sectionRef);
+      const ctx = gsap.context(() => {
+        gsap.to(scrollWrapperRef.current, {
+          x: -horizontalScrollLength,
+          ease: 'none',
+          scrollTrigger: {
+            trigger: sectionRef.current,
+            start: 'top top',
+            end: () => `+=${totalWidth}`,
+            pin: true,
+            scrub: true,
+            invalidateOnRefresh: true, // Recalculate on window resize
+            onRefresh: () => {
+              // Recalculate dimensions on refresh
+              const newTotalWidth = scrollWrapperRef.current.scrollWidth;
+              const newHorizontalScrollLength = newTotalWidth - window.innerWidth;
+              gsap.set(scrollWrapperRef.current, { x: 0 }); // Reset position
+            }
+          }
+        });
+      }, sectionRef);
 
-    return () => ctx.revert();
-  }, [project]);
+      return () => {
+        ctx.revert();
+        clearTimeout(timer);
+      };
+    }, 100);
 
-  const handleImageError = (imagePath, index) => {
-    setImageErrors(prev => new Set([...prev, index]));
-  };
+    return () => clearTimeout(timer);
+  }, [isScrollTriggerReady, project]);
+
+  // Cleanup ScrollTrigger on route change
+  useEffect(() => {
+    return () => {
+      ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+    };
+  }, [projectId]);
+
+  // Reset state when project changes
+  useEffect(() => {
+    setImagesLoaded(0);
+    setImageErrors(new Set());
+    setIsScrollTriggerReady(false);
+    ScrollTrigger.refresh();
+  }, [projectId]);
 
   if (!project) {
     return (
@@ -129,13 +183,22 @@ const ProjectPage = ({ params }) => {
                       sizes="100vw"
                       unoptimized
                       className="h-full w-auto object-contain"
+                      onLoad={handleImageLoad}
                       onError={() => handleImageError(img, index)}
+                      priority={index < 3} // Prioritize first 3 images
                     />
                   )}
                 </div>
               </article>
             ))}
           </div>
+          
+          {/* Loading indicator */}
+          {!isScrollTriggerReady && (
+            <div className="absolute inset-0 bg-white bg-opacity-50 flex items-center justify-center">
+              <div className="text-gray-600">Loading gallery...</div>
+            </div>
+          )}
         </section>
       </main>
 
