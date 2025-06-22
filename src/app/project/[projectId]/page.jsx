@@ -4,7 +4,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { ScrollTrigger } from 'gsap/ScrollTrigger'; 
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -112,21 +112,23 @@ const ProjectPage = ({ params }) => {
 
         {/* Horizontal scroll gallery */}
         <section ref={sectionRef} className="relative h-screen overflow-hidden bg-white text-black">
-          <div ref={scrollWrapperRef} className="flex h-full w-fit">
+          <div ref={scrollWrapperRef} className="flex h-full">
             {project.images.map((img, index) => (
-              <article key={index} className="flex-shrink-0 w-screen h-full flex items-center justify-center relative">
-              <div className="w-full h-full relative">
+              <article key={index} className="flex-shrink-0 h-full flex items-center relative">
+                <div className="h-full relative">
                   {imageErrors.has(index) ? (
-                    <div className="w-full h-full bg-gray-700 flex items-center justify-center">
+                    <div className="h-full bg-gray-700 flex items-center justify-center px-8">
                       <p className="text-gray-300">Image unavailable</p>
                     </div>
                   ) : (
                     <Image
                       src={img}
                       alt={`Project image ${index + 1}`}
-                      fill
+                      width={0}
+                      height={0}
+                      sizes="100vw"
                       unoptimized
-                      className="object-contain"
+                      className="h-full w-auto object-contain"
                       onError={() => handleImageError(img, index)}
                     />
                   )}
