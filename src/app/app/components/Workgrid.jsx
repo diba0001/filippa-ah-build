@@ -16,20 +16,20 @@ const ImageGrid = () => {
     },
     {
       id: 2,
-      title: "Urban Nights",
+      title: "YAS CELEBRATION",
       subtitle: "Commercial Campaign",
-      imageSrc: "/images/urban-nights.jpg",
-      url: "/project/commercial-shoot",
-      alt: "Urban Nights - Commercial Campaign",
+      imageSrc: "/images/yas/YAS_CELEBRATION/DSCF6610.jpg",
+      url: "/project/YAS-CELEBRATION",
+      alt: "YAS CELEBRATION",
       category: "Commercial"
     },
     {
       id: 3,
-      title: "Executive Wardrobe",
+      title: "YAS",
       subtitle: "Personal Styling",
       imageSrc: "/images/yas/250519_YAS_2DAGE20870.jpg",
-      url: "/project/personal-styling",
-      alt: "Executive Wardrobe - Personal Styling Session",
+      url: "/project/YAS",
+      alt: "YAS",
       category: "Personal Styling"
     },
     {

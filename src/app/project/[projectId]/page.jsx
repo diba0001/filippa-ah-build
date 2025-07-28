@@ -24,13 +24,13 @@ const ProjectPage = ({ params }) => {
       description: "A contemporary take on spring essentials, blending soft textures with structured silhouettes...",
       images: ["/images/spring-1.jpg", "/images/spring-2.jpg", "/images/spring-3.jpg"]
     },
-    'commercial-shoot': {
-      title: "Urban Nights",
-      subtitle: "Commercial Campaign",
-      description: "Bold evening looks that transition from day to night effortlessly...",
-      images: ["/images/urban-1.jpg", "/images/urban-2.jpg"]
+    'YAS-CELEBRATION': {
+      title: "YAS CELEBRATION",
+      subtitle: "lorem lorem lorem",
+      description: "lorem ipsum",
+      images: ["/images/yas/YAS_CELEBRATION/DSCF6257.jpg", "/images/yas/YAS_CELEBRATION/DSCF6612.jpg", "/images/yas/YAS_CELEBRATION/DSCF6425.jpg", "/images/yas/YAS_CELEBRATION/DSCF6520.jpg", "/images/yas/YAS_CELEBRATION/DSCF6527.jpg", "/images/yas/YAS_CELEBRATION/DSCF6561.jpg", "/images/yas/YAS_CELEBRATION/DSCF6610.jpg", "/images/yas/YAS_CELEBRATION/DSCF6301.jpg"]
     },
-    'personal-styling': {
+    'YAS': {
       title: "Executive Wardrobe",
       subtitle: "Personal Styling Session",
       description: "A complete wardrobe transformation focusing on powerful, professional pieces...",

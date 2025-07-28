@@ -21,11 +21,11 @@ const Footer = () => {
 
           <div className="flex flex-col items-center justify-center text-center md:flex-1">
             <a
-              href="mailto:example@example.com"
+              href="mailto: f@filippaah.com"
               aria-label="contact email"
               className="text-xs mb-2"
             >
-              filippa@email.com
+              f@filippaah.com
             </a>
             <p className="text-xs">
               &copy; {new Date().getFullYear()} FILIPPA A. H. | All rights reserved.
@@ -33,7 +33,7 @@ const Footer = () => {
           </div>
 
           <div className="mt-4 md:mt-0 md:flex-1 md:flex md:justify-end">
-            <Link href="https://www.instagram.com/XXX/" target="_blank" role="button" aria-label="Instagram">
+            <Link href="https://www.instagram.com/filippaastrup/" target="_blank" role="button" aria-label="Instagram">
               <FaInstagram className="text-lg hover:text-gray-300" />
             </Link>
           </div>
