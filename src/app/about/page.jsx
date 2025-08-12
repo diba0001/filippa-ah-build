@@ -26,7 +26,7 @@ solutions that are not only beautiful but also aligned with long-term brand goal
         </div>
         <div className="w-full md:w-1/2 relative aspect-[3/4]">
           <Image 
-            src="/images/filippa.jpeg" 
+            src="/images/ABOUT/filippa.jpeg" 
             alt="Filippa - Danish Art Director"
             fill
             className="object-cover rounded-sm"
