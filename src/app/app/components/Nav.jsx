@@ -34,7 +34,7 @@ const Navbar = () => {
               className={`text-md font-light ${
                 pathname === "/work" 
                   ? "text-gray-500 italic" 
-                  : "hover:underline hover:text-gray-600"
+                  : "hover:line-through hover:text-gray-600"
               }`}
             >
               WORK
@@ -45,7 +45,7 @@ const Navbar = () => {
               className={`text-md font-light ${
                 pathname === "/personal" 
                   ? "text-gray-500 italic" 
-                  : "hover:underline hover:text-gray-600"
+                  : "hover:line-through hover:text-gray-600"
               }`}
             >
               PERSONAL
@@ -56,7 +56,7 @@ const Navbar = () => {
               className={`text-md font-light ${
                 pathname === "/about" 
                   ? "text-gray-500 italic" 
-                  : "hover:underline hover:text-gray-600"
+                  : "hover:line-through hover:text-gray-600"
               }`}
             >
               ABOUT
@@ -67,7 +67,7 @@ const Navbar = () => {
               className={`text-md font-light ${
                 pathname === "/contact" 
                   ? "text-gray-500 italic" 
-                  : "hover:underline hover:text-gray-600"
+                  : "hover:line-through hover:text-gray-600"
               }`}
             >
               CONTACT
@@ -135,7 +135,7 @@ const Navbar = () => {
                 className={`text-xl font-light ${
                   pathname === "/work" 
                     ? "text-gray-500 italic" 
-                    : "hover:underline hover:text-gray-600"
+                    : "hover:line-through hover:text-gray-600"
                 }`}
                 onClick={closeMenu}
               >
@@ -147,7 +147,7 @@ const Navbar = () => {
                 className={`text-xl font-light ${
                   pathname === "/personal" 
                     ? "text-gray-500 italic" 
-                    : "hover:underline hover:text-gray-600"
+                    : "hover:line-through hover:text-gray-600"
                 }`}
                 onClick={closeMenu}
               >
@@ -159,7 +159,7 @@ const Navbar = () => {
                 className={`text-xl font-light ${
                   pathname === "/about" 
                     ? "text-gray-500 italic" 
-                    : "hover:underline hover:text-gray-600"
+                    : "hover:line-through hover:text-gray-600"
                 }`}
                 onClick={closeMenu}
               >
@@ -171,7 +171,7 @@ const Navbar = () => {
                 className={`text-xl font-light ${
                   pathname === "/contact" 
                     ? "text-gray-500 italic" 
-                    : "hover:underline hover:text-gray-600"
+                    : "hover:line-through hover:text-gray-600"
                 }`}
                 onClick={closeMenu}
               >

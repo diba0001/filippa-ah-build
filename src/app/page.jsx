@@ -1,19 +1,52 @@
-import React from 'react';
+"use client";
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 
 const HomepageImage = ({ 
-  src = "/images/yas/250519_YAS_2DAGE21458.jpg",
+  images = [
+    "/images/GIFF/GIFF1.jpg",
+    "/images/GIFF/GIFF2.jpg",
+    "/images/GIFF/GIFF3.jpg",
+    "/images/GIFF/GIFF4.jpg",
+    "/images/GIFF/GIFF5.jpg",
+    "/images/GIFF/GIFF6.jpg",
+    "/images/GIFF/GIFF7.jpg",
+    "/images/GIFF/GIFF8.jpg",
+    "/images/GIFF/GIFF9.jpg",
+    "/images/GIFF/GIFF10.jpg",
+    "/images/GIFF/GIFF11.jpg",
+    "/images/GIFF/GIFF12.jpg",
+    "/images/GIFF/GIFF13.jpg",
+    "/images/GIFF/GIFF14.jpg"
+  ],
   alt = "Visual storytelling image", 
-  title = "VISUAL STORYTELLING AND ART DIRECTIONING" 
+  title = "VISUAL STORYTELLING AND ART DIRECTIONING",
+  flickerSpeed = 300 // milliseconds between image changes
 }) => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    if (images.length === 0) return;
+
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => 
+        (prevIndex + 1) % images.length
+      );
+    }, flickerSpeed);
+
+    return () => clearInterval(interval);
+  }, [images.length, flickerSpeed]);
+
+  const currentImage = images[currentImageIndex];
+
   return (
     <div className="flex items-center justify-center h-screen w-full">
       <div className="w-full max-w-4xl px-4">
         <div className="aspect-video bg-gray-200 w-full relative overflow-hidden">
-          {src ? (
+          {currentImage ? (
             <Image
-              src={src}
-              alt={alt}
+              src={currentImage}
+              alt={`${alt} ${currentImageIndex + 1}`}
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
@@ -21,12 +54,12 @@ const HomepageImage = ({
             />
           ) : (
             <div className="w-full h-full flex items-center justify-center text-gray-500">
-              <p>No image provided</p>
+              <p>No images provided</p>
             </div>
           )}
         </div>
         <div className='flex items-center justify-center text-center mt-2'>
-        {/*   <h1 className='text-black font-thin text-3xl'>{title}</h1> */}
+          {/* <h1 className='text-black font-thin text-3xl'>{title}</h1> */}
         </div>
       </div>
     </div>

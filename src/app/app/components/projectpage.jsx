@@ -12,7 +12,7 @@ const ProjectPage = () => {
     'alpha': {
       id: 1,
       title: "Project Alpha",
-      subtitle: "Modern Web Application",
+      role: "Modern Web Application",
       heroImage: "/images/project1-hero.jpg",
       gallery: [
         "/images/project1-1.jpg",
@@ -35,7 +35,7 @@ const ProjectPage = () => {
     'beta': {
       id: 2,
       title: "Project Beta",
-      subtitle: "Cross-Platform Mobile App",
+      role: "Cross-Platform Mobile App",
       heroImage: "/images/project2-hero.jpg",
       gallery: [
         "/images/project2-1.jpg",
@@ -94,7 +94,7 @@ const ProjectPage = () => {
       <section className="max-w-6xl mx-auto px-4 py-12">
         <div className="mb-8">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">{project.title}</h1>
-          <p className="text-xl text-gray-600 mb-6">{project.subtitle}</p>
+          <p className="text-xl text-gray-600 mb-6">{project.role}</p>
           <div className="flex flex-wrap gap-4 mb-8">
             {project.liveUrl && (
               <a 
