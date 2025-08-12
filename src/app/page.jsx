@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const HomepageImage = ({ 
   images = [
-    "/images/GIFF/GIFF1.jpg",
+    "/images/GIFF1.jpg",
     "/images/GIFF/GIFF2.jpg",
     "/images/GIFF/GIFF3.jpg",
     "/images/GIFF/GIFF4.jpg",
