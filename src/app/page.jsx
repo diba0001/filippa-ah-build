@@ -54,7 +54,7 @@ const HomepageImage = ({
             />
           ) : (
             <div className="w-full h-full flex items-center justify-center text-gray-500">
-              <p>No images provided</p>
+              <p>No images have been provided</p>
             </div>
           )}
         </div>
