@@ -1,6 +1,5 @@
 {
   "scripts": {
-    "build": "git lfs pull && next build",
-    "prebuild": "git lfs install"
+    "build": "next build"
   }
 }
