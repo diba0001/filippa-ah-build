@@ -42,13 +42,13 @@ const HomepageImage = ({
   return (
     <div className="flex items-center justify-center h-screen w-full">
       <div className="w-full max-w-4xl px-4">
-        <div className="aspect-video bg-gray-200 w-full relative overflow-hidden">
+        <div className="w-full h-[80vh] relative overflow-hidden">
           {currentImage ? (
             <Image
               src={currentImage}
               alt={`${alt} ${currentImageIndex + 1}`}
               fill
-              className="object-cover"
+              className="object-contain"
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
               priority
             />
