@@ -46,7 +46,7 @@ const ImageGrid = () => {
       id: 3,
       title: "YAS AUTUMN CAMPAIGN #AW1",
       role: "Art Direction",
-      imageSrc: "/images/yas/250519_YAS_2DAGE20870.jpg",
+      imageSrc: "/images/YAS_AW1/250519_YAS_2DAGE20870.jpg",
       url: "/project/YAS",
       alt: "YAS",
       category: "Art Direction"
