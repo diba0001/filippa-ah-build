@@ -1,4 +1,4 @@
-"use client"; // Required for interactive components
+"use client"; // REMEMBER THAT THE INDEX.HTML LINKING WONT WORK LOCALLY ON DEV MODE
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -30,7 +30,7 @@ const Navbar = () => {
             </Link>
 
             <Link 
-              href="/work" 
+              href="/work/index.html" 
               className={`text-md font-light ${
                 pathname === "/work" 
                   ? "text-gray-500 italic" 
@@ -41,7 +41,7 @@ const Navbar = () => {
             </Link>
             
             <Link 
-              href="/personal" 
+              href="/personal/index.html" 
               className={`text-md font-light ${
                 pathname === "/personal" 
                   ? "text-gray-500 italic" 
@@ -52,7 +52,7 @@ const Navbar = () => {
             </Link>
             
             <Link 
-              href="/about" 
+              href="/about/index.html" 
               className={`text-md font-light ${
                 pathname === "/about" 
                   ? "text-gray-500 italic" 
@@ -63,7 +63,7 @@ const Navbar = () => {
             </Link>
             
             <Link 
-              href="/contact" 
+              href="/contact/index.html" 
               className={`text-md font-light ${
                 pathname === "/contact" 
                   ? "text-gray-500 italic" 
@@ -131,7 +131,7 @@ const Navbar = () => {
             {/* Menu Items */}
             <div className="flex flex-col items-center justify-center flex-1 space-y-8">
               <Link 
-                href="/work" 
+                href="/work/index.html" 
                 className={`text-xl font-light ${
                   pathname === "/work" 
                     ? "text-gray-500 italic" 
@@ -143,7 +143,7 @@ const Navbar = () => {
               </Link>
               
               <Link 
-                href="/personal" 
+                href="/personal/index.html" 
                 className={`text-xl font-light ${
                   pathname === "/personal" 
                     ? "text-gray-500 italic" 
@@ -155,7 +155,7 @@ const Navbar = () => {
               </Link>
               
               <Link 
-                href="/about" 
+                href="/about/index.html" 
                 className={`text-xl font-light ${
                   pathname === "/about" 
                     ? "text-gray-500 italic" 
@@ -167,7 +167,7 @@ const Navbar = () => {
               </Link>
               
               <Link 
-                href="/contact" 
+                href="/contact/index.html" 
                 className={`text-xl font-light ${
                   pathname === "/contact" 
                     ? "text-gray-500 italic" 
