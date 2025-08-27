@@ -8,15 +8,16 @@ export async function generateStaticParams() {
   return Object.keys(projectsData).map(projectId => ({ projectId }));
 }
 
-export default function ProjectPage({ params }) {
-  const project = projectsData[params.projectId];
+export default async function ProjectPage({ params }) {
+  const resolvedParams = await params;
+  const project = projectsData[resolvedParams.projectId];
 
   if (!project) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-neutral-50">
         <div className="text-center">
           <h1 className="text-2xl font-light text-gray-800 mb-4">Project Not Found</h1>
-          <p className="text-gray-600 mb-4">The requested project "{params.projectId}" could not be found.</p>
+          <p className="text-gray-600 mb-4">The requested project "{resolvedParams.projectId}" could not be found.</p>
           <Link href="/work" className="text-black hover:text-gray-600 font-light tracking-wide transition-colors">← Back to Portfolio</Link>
         </div>
       </div>
