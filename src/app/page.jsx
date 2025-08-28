@@ -42,7 +42,7 @@ const HomepageImage = ({
   return (
     <div className="flex items-center justify-center h-screen w-full">
       <div className="w-full max-w-4xl px-4">
-        <div className="w-full h-[80vh] relative overflow-hidden">
+        <div className="w-full h-[53vh] relative overflow-hidden">
           {currentImage ? (
             <Image
               src={currentImage}
