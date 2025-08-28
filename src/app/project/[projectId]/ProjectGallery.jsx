@@ -85,7 +85,7 @@ export default function ProjectGallery({ images }) {
 
       {!isScrollTriggerReady && (
         <div className="absolute inset-0 bg-white bg-opacity-50 flex items-center justify-center">
-          <div className="text-gray-600 text-sm">Loading gallery...</div>
+          <div className="text-gray-700 text-sm">Loading gallery...</div>
         </div>
       )}
     </section>

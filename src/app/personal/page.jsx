@@ -59,7 +59,7 @@ const PersonalPage = () => {
         {photos.map((photo) => (
           <div
             key={photo.id}
-            className="overflow-hidden rounded-lg shadow-md aspect-square"
+            className="overflow-hidden shadow-md aspect-square"
           >
             <img
               src={photo.src}
@@ -88,7 +88,7 @@ const PersonalPage = () => {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 002 2z" />
           </svg>
           <h3 className="mt-2 text-sm font-medium text-gray-900">No photos found</h3>
-          <p className="mt-1 text-sm text-gray-500">Make sure your photos are in the PERSONAL folder.</p>
+          <p className="mt-1 text-sm text-gray-700">Make sure your photos are in the PERSONAL folder.</p>
         </div>
       )}
     </div>

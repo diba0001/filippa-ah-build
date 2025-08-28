@@ -13,7 +13,7 @@ const Footer = () => {
           <a
             href="tel:+4550708507"
             aria-label="Call +45 50708507"
-            className="text-sm hover:text-gray-600 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 rounded px-2 py-1"
+            className="text-sm hover:text-gray-700 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 rounded px-2 py-1"
           >
             +45 50708507
           </a>
@@ -21,7 +21,7 @@ const Footer = () => {
           <a
             href="mailto:f@filippaah.com"
             aria-label="Email f@filippaah.com"
-            className="text-sm hover:text-gray-600 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 rounded px-2 py-1"
+            className="text-sm hover:text-gray-700 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 rounded px-2 py-1"
           >
             f@filippaah.com
           </a>
@@ -31,12 +31,12 @@ const Footer = () => {
             target="_blank" 
             rel="noopener noreferrer"
             aria-label="Visit Instagram profile (opens in new tab)"
-            className="hover:text-gray-600 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 rounded p-2"
+            className="hover:text-gray-700 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 rounded p-2"
           >
             <FaInstagram className="text-xl" />
           </Link>
           
-          <p className="text-xs text-center text-gray-600">
+          <p className="text-xs text-center text-gray-700">
             &copy; {new Date().getFullYear()} FILIPPA A. H. | All rights reserved.
           </p>
         </div>
@@ -46,7 +46,7 @@ const Footer = () => {
           <a
             href="tel:+4550708507"
             aria-label="Call +45 50708507"
-            className="text-sm hover:text-gray-600 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 rounded px-2 py-1"
+            className="text-sm hover:text-gray-700 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 rounded px-2 py-1"
           >
             +45 50708507
           </a>
@@ -56,7 +56,7 @@ const Footer = () => {
           <a
             href="mailto:f@filippaah.com"
             aria-label="Email f@filippaah.com"
-            className="text-sm hover:text-gray-600 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 rounded px-2 py-1"
+            className="text-sm hover:text-gray-700 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 rounded px-2 py-1"
           >
             f@filippaah.com
           </a>
@@ -68,7 +68,7 @@ const Footer = () => {
             target="_blank" 
             rel="noopener noreferrer"
             aria-label="Visit Instagram profile (opens in new tab)"
-            className="hover:text-gray-600 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 rounded p-2"
+            className="hover:text-gray-700 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 rounded p-2"
           >
             <FaInstagram className="text-lg" />
           </Link>
@@ -76,7 +76,7 @@ const Footer = () => {
         
         {/* Copyright - Desktop Only (Centered Below) */}
         <div className="hidden md:block md:text-center md:mt-6">
-          <p className="text-xs text-gray-600">
+          <p className="text-xs text-gray-700">
             &copy; {new Date().getFullYear()} FILIPPA A. H. | All rights reserved.
           </p>
         </div>

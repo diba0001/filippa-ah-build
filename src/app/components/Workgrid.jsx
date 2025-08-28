@@ -156,9 +156,6 @@ const ImageGrid = () => {
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-12">
-      {/* Header */}
-
-      {/* Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project) => (
           <Link 
@@ -167,7 +164,7 @@ const ImageGrid = () => {
             className="block group"
           >
             <div className="relative overflow-hidden">
-              {/* Main Image */}
+
               <div className="aspect-[4/5] relative">
                 <Image 
                   src={project.imageSrc}
@@ -178,27 +175,15 @@ const ImageGrid = () => {
                   placeholder="blur"
                   blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
                 />
-                
-                {/* Subtle overlay */}
                 <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300" />
               </div>
-
-              {/* Project Info */}
-              <div className="pt-6">
-                {/* Category */}
-                <p className="text-xs tracking-widest text-gray-500 uppercase mb-1 font-light flex items-center justify-center">
+              <div className="pt-2">
+                <p className="text-xs tracking-widest text-gray-700 uppercase font-light flex items-center justify-center">
                   {project.category}
                 </p>
-                
-                {/* Title */}
-                <h3 className="text-sm font-medium text-black mb-1 tracking-tight group-hover:text-gray-600 transition-colors duration-300 flex items-center justify-center">
+                <h3 className="text-xs font-light text-gray-700 mb-1 tracking-tight group-hover:text-gray-700 transition-colors duration-300 flex items-center justify-center">
                   {project.title}
                 </h3>
-                
-                {/* role */}
-              {/*   <p className="text-sm text-gray-600 font-light">
-                  {project.role}
-                </p> */}
               </div>
             </div>
           </Link>

@@ -17,24 +17,24 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="w-full py-4 md:py-8 px-4 md:px-12 lg:px-16">
+    <nav className="w-full py-6 md:py-8 px-4 md:px-12 lg:px-16">
       <div className="max-w-7xl mx-auto">
         {/* Desktop Navigation */}
         <div className="hidden md:flex justify-center items-center text-black">
-          <div className="flex items-center space-x-12">
+          <div className="flex items-center space-x-8">
             <Link 
               href="/" 
-              className="text-md font-light tracking-wider"
+              className="text-xs font-light tracking-wider"
             >
               FILIPPA A. H.
             </Link>
 
             <Link 
               href="/work" 
-              className={`text-md font-light ${
+              className={`text-xs font-light ${
                 pathname === "/work" 
-                  ? "text-gray-500 italic" 
-                  : "hover:line-through hover:text-gray-600"
+                  ? "text-gray-700 italic" 
+                  : "hover:line-through hover:text-gray-700"
               }`}
             >
               WORK
@@ -42,10 +42,10 @@ const Navbar = () => {
             
             <Link 
               href="/personal" 
-              className={`text-md font-light ${
+              className={`text-xs font-light ${
                 pathname === "/personal" 
-                  ? "text-gray-500 italic" 
-                  : "hover:line-through hover:text-gray-600"
+                  ? "text-gray-700 italic" 
+                  : "hover:line-through hover:text-gray-700"
               }`}
             >
               PERSONAL
@@ -53,10 +53,10 @@ const Navbar = () => {
             
             <Link 
               href="/about" 
-              className={`text-md font-light ${
+              className={`text-xs font-light ${
                 pathname === "/about" 
-                  ? "text-gray-500 italic" 
-                  : "hover:line-through hover:text-gray-600"
+                  ? "text-gray-700 italic" 
+                  : "hover:line-through hover:text-gray-700"
               }`}
             >
               ABOUT
@@ -64,10 +64,10 @@ const Navbar = () => {
             
             <Link 
               href="/contact" 
-              className={`text-md font-light ${
+              className={`text-xs font-light ${
                 pathname === "/contact" 
-                  ? "text-gray-500 italic" 
-                  : "hover:line-through hover:text-gray-600"
+                  ? "text-gray-700 italic" 
+                  : "hover:line-through hover:text-gray-700"
               }`}
             >
               CONTACT
@@ -80,7 +80,7 @@ const Navbar = () => {
           {/* Logo */}
           <Link 
             href="/" 
-            className="text-sm font-light tracking-wider"
+            className="text-xs font-light tracking-wider"
             onClick={closeMenu}
           >
             FILIPPA A. H.
@@ -111,7 +111,7 @@ const Navbar = () => {
             <div className="flex justify-between items-center p-4 border-b border-gray-200">
               <Link 
                 href="/" 
-                className="text-sm font-light tracking-wider text-black"
+                className="text-xs font-light tracking-wider text-black"
                 onClick={closeMenu}
               >
                 FILIPPA A. H.
@@ -132,10 +132,10 @@ const Navbar = () => {
             <div className="flex flex-col items-center justify-center flex-1 space-y-8">
               <Link 
                 href="/work" 
-                className={`text-xl font-light ${
+                className={`text-md font-light ${
                   pathname === "/work" 
-                    ? "text-gray-500 italic" 
-                    : "hover:line-through hover:text-gray-600"
+                    ? "text-gray-700 italic" 
+                    : "hover:line-through hover:text-gray-700"
                 }`}
                 onClick={closeMenu}
               >
@@ -144,10 +144,10 @@ const Navbar = () => {
               
               <Link 
                 href="/personal" 
-                className={`text-xl font-light ${
+                className={`text-md font-light ${
                   pathname === "/personal" 
-                    ? "text-gray-500 italic" 
-                    : "hover:line-through hover:text-gray-600"
+                    ? "text-gray-700 italic" 
+                    : "hover:line-through hover:text-gray-700"
                 }`}
                 onClick={closeMenu}
               >
@@ -156,10 +156,10 @@ const Navbar = () => {
               
               <Link 
                 href="/about" 
-                className={`text-xl font-light ${
+                className={`text-md font-light ${
                   pathname === "/about" 
-                    ? "text-gray-500 italic" 
-                    : "hover:line-through hover:text-gray-600"
+                    ? "text-gray-700 italic" 
+                    : "hover:line-through hover:text-gray-700"
                 }`}
                 onClick={closeMenu}
               >
@@ -168,10 +168,10 @@ const Navbar = () => {
               
               <Link 
                 href="/contact" 
-                className={`text-xl font-light ${
+                className={`text-md font-light ${
                   pathname === "/contact" 
-                    ? "text-gray-500 italic" 
-                    : "hover:line-through hover:text-gray-600"
+                    ? "text-gray-700 italic" 
+                    : "hover:line-through hover:text-gray-700"
                 }`}
                 onClick={closeMenu}
               >

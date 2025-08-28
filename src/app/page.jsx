@@ -21,7 +21,7 @@ const HomepageImage = ({
   ],
   alt = "Visual storytelling image", 
   title = "VISUAL STORYTELLING AND ART DIRECTIONING",
-  flickerSpeed = 300 // milliseconds between image changes
+  flickerSpeed = 900 // milliseconds between image changes
 }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -53,13 +53,10 @@ const HomepageImage = ({
               priority
             />
           ) : (
-            <div className="w-full h-full flex items-center justify-center text-gray-500">
+            <div className="w-full h-full flex items-center justify-center text-gray-700">
               <p>No images have been provided</p>
             </div>
           )}
-        </div>
-        <div className='flex items-center justify-center text-center mt-2'>
-          {/* <h1 className='text-black font-thin text-3xl'>{title}</h1> */}
         </div>
       </div>
     </div>

@@ -80,7 +80,7 @@ const ProjectPage = () => {
         <div className="max-w-6xl mx-auto px-4 py-4">
           <Link 
             to="/work" 
-            className="inline-flex items-center text-gray-600 hover:text-gray-800 transition-colors"
+            className="inline-flex items-center text-gray-700 hover:text-gray-800 transition-colors"
           >
             <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -94,7 +94,7 @@ const ProjectPage = () => {
       <section className="max-w-6xl mx-auto px-4 py-12">
         <div className="mb-8">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">{project.title}</h1>
-          <p className="text-xl text-gray-600 mb-6">{project.role}</p>
+          <p className="text-xl text-gray-700 mb-6">{project.role}</p>
           <div className="flex flex-wrap gap-4 mb-8">
             {project.liveUrl && (
               <a 
@@ -139,7 +139,7 @@ const ProjectPage = () => {
           <div className="md:col-span-2">
             <section className="mb-12">
               <h2 className="text-2xl font-bold text-gray-900 mb-4">About This Project</h2>
-              <p className="text-gray-600 leading-relaxed text-lg">{project.description}</p>
+              <p className="text-gray-700 leading-relaxed text-lg">{project.description}</p>
             </section>
 
             <section className="mb-12">
@@ -198,7 +198,7 @@ const ProjectPage = () => {
 
               <div className="mb-6">
                 <h4 className="font-medium text-gray-700 mb-2">Completion Date</h4>
-                <p className="text-gray-600">{project.completionDate}</p>
+                <p className="text-gray-700">{project.completionDate}</p>
               </div>
 
               {(project.liveUrl || project.githubUrl) && (

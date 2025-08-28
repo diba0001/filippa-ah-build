@@ -3,11 +3,11 @@ import React from 'react';
 
 const ContactPage = () => {
   return (
-    <div className="flex items-center justify-center px-4 py-48">
+    <section className="flex items-center justify-center px-4 min-h-screen lg:max-h-44">
       <div className="flex flex-col items-center justify-center text-center gap-6">
         <div className="space-y-4">
           <div className="flex flex-col items-center">
-            <h1 className="text-lg font-thin tracking-wide text-gray-500">Contact</h1>
+            <h1 className="text-lg font-thin tracking-wide text-gray-700">Contact</h1>
             <div>
               <Link
                 href="tel:+4550708507"
@@ -28,7 +28,7 @@ const ContactPage = () => {
             </div>
           </div>
           <div className="flex flex-col items-center">
-            <h1 className="text-lg font-thin tracking-wide text-gray-500">(Personal)</h1>
+            <h1 className="text-lg font-thin tracking-wide text-gray-700">(Personal)</h1>
             <div>
               <Link
                 href="https://www.instagram.com/filippaastrup/"
@@ -50,7 +50,7 @@ const ContactPage = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
