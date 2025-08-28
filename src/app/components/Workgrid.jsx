@@ -178,10 +178,10 @@ const ImageGrid = () => {
                 <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300" />
               </div>
               <div className="pt-2">
-                <p className="text-xs tracking-widest text-gray-700 uppercase font-light flex items-center justify-center">
+                <p className="text-xs tracking-widest text-gray-700 uppercase font-light flex items-center justify-center mt-1">
                   {project.category}
                 </p>
-                <h3 className="text-xs font-light text-gray-700 mb-1 tracking-tight group-hover:text-gray-700 transition-colors duration-300 flex items-center justify-center">
+                <h3 className="text-xs font-light text-gray-700 mb-2 tracking-tight group-hover:text-gray-700 transition-colors duration-300 flex items-center justify-center">
                   {project.title}
                 </h3>
               </div>
