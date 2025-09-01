@@ -3,7 +3,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 const ImageGrid = () => {
-  // Stylist portfolio projects with matching URLs
   const projects = [
          {
       id: 16,
@@ -14,7 +13,6 @@ const ImageGrid = () => {
       alt: "YAS WINTER 25 CAMPAIGN",
       category: "Art Direction"
     },
-    
     {
       id: 2,
       title: "YAS CELEBRATION",
@@ -111,7 +109,7 @@ const ImageGrid = () => {
       title: "YAS SS4",
       role: "Art Direction",
       imageSrc: "/images/YAS_SS4/SS4_5.jpg",
-      url: "/project/YAS_SS4", // Matches the projectId from the detail page
+      url: "/project/YAS_SS4",
       alt: "Spring Editorial - Fresh Minimalism",
       category: "Art Direction"
     },
@@ -147,8 +145,8 @@ const ImageGrid = () => {
       id: 15,
       title: "PLENTY& CAMPAIGN",
       role: "Art Direction",
-      imageSrc: "/images/PLENTY&_CAMPAIGN/PLENTY&_1.jpg",
-      url: "/project/PLENTY&_CAMPAIGN",
+      imageSrc: "/images/PLENTY_CAMPAIGN/PLENTY_1.jpg",
+      url: "/project/PLENTY_CAMPAIGN",
       alt: "PLENTY& CAMPAIGN",
       category: "Art Direction"
     }

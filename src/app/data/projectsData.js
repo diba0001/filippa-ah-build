@@ -211,20 +211,20 @@ export const projectsData = {
     ]
   },
 
-  'PLENTY&_CAMPAIGN': {
+  'PLENTY_CAMPAIGN': {
     title: "PLENTY& CAMPAIGN",
     role: "Art Direction",
     description: "Project in collaboration with: Martin Bendix, Sofie Liv Madsen, Mads Stig",
     images: [
-      "/images/PLENTY&_CAMPAIGN/PLENTY&_1.jpg",
-      "/images/PLENTY&_CAMPAIGN/PLENTY&_2.jpg",
-      "/images/PLENTY&_CAMPAIGN/PLENTY&_3.jpg",
-      "/images/PLENTY&_CAMPAIGN/PLENTY&_4.jpg",
-      "/images/PLENTY&_CAMPAIGN/PLENTY&_5.jpg",
-      "/images/PLENTY&_CAMPAIGN/PLENTY&_6.jpg",
-      "/images/PLENTY&_CAMPAIGN/PLENTY&_7.jpg",
-      "/images/PLENTY&_CAMPAIGN/PLENTY&_8.jpg",
-      "/images/PLENTY&_CAMPAIGN/PLENTY&_9.jpg"
+      "/images/PLENTY_CAMPAIGN/PLENTY_1.jpg",
+      "/images/PLENTY_CAMPAIGN/PLENTY_2.jpg",
+      "/images/PLENTY_CAMPAIGN/PLENTY_3.jpg",
+      "/images/PLENTY_CAMPAIGN/PLENTY_4.jpg",
+      "/images/PLENTY_CAMPAIGN/PLENTY_5.jpg",
+      "/images/PLENTY_CAMPAIGN/PLENTY_6.jpg",
+      "/images/PLENTY_CAMPAIGN/PLENTY_7.jpg",
+      "/images/PLENTY_CAMPAIGN/PLENTY_8.jpg",
+      "/images/PLENTY_CAMPAIGN/PLENTY_9.jpg"
     ]
   },
 

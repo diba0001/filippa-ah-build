@@ -12,7 +12,7 @@ export async function generateStaticParams() {
     { projectId: 'MAMALICIOUS_BLACK_FRIDAY_2024' },
     { projectId: 'MAMALICIOUS_AUTUMN_CAMPAIGN_AW1' },
     { projectId: 'MAMALICIOUS_AUTUMN_CAMPAIGN_AW2' },
-    { projectId: 'PLENTY&_CAMPAIGN' },
+    { projectId: 'PLENTY_CAMPAIGN' },
     { projectId: 'YAS-CELEBRATION' },
     { projectId: 'YAS' },
     { projectId: 'YAS_SS4' }
