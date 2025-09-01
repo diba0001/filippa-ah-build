@@ -35,7 +35,7 @@ export default async function ProjectPage({ params }) {
       <main id="main-content">
         <section className="px-6 py-16 text-center">
           <header>
-          <h1 className="text-sm md:text-lg font-light text-gray-700 mb-1">{project.title}</h1>
+          <h1 className="text-xs font-light tracking-widest text-gray-700 mb-1">{project.title}</h1>
           </header>
           <p className="text-xs tracking-widest text-gray-700 uppercase mb-1">{project.role}</p>
           <div className="max-w-2xl mx-auto">
