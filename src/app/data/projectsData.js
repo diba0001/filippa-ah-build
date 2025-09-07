@@ -217,7 +217,7 @@ export const projectsData = {
   'YAS-CELEBRATION': {
     title: "YAS CELEBRATION",
     role: "Art Direction & Styling",
-    description: "Project in collaboration with: Christian Torp, Jan Bue Laumark, Vivi Søderholm, Maja Westergaard, Caroline Forsling",
+    description: "Christian Torp, Nana Steendahl Dalsgaard",
     images: [
       "/images/YAS_CELEBRATION/DSCF6527.jpg",
       "/images/YAS_CELEBRATION/DSCF6610.jpg",

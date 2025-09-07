@@ -40,8 +40,8 @@ const HomepageImage = ({
   const currentImage = images[currentImageIndex];
 
   return (
-    <div className="flex items-center justify-center h-screen w-full">
-      <div className="w-full max-w-4xl px-4">
+    <div className="fixed inset-0 flex items-center justify-center w-full overflow-hidden pointer-events-none">
+      <div className="w-full max-w-4xl px-4 pointer-events-auto">
         <div className="w-full h-[53vh] relative overflow-hidden">
           {currentImage ? (
             <Image
