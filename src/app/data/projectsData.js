@@ -187,13 +187,13 @@ export const projectsData = {
     role: "Art Direction",
     description: "Project in collaboration with: Anders Witt, Sofie Samuelsen, Mads Stig, Anne-Cecilie Gade, Nicole Rijsdijk",
     images: [
-      "/images/MAMALICIOUS_AW2_2024/AW2_1.jpg",
-      "/images/MAMALICIOUS_AW2_2024/AW2_2.jpg",
-      "/images/MAMALICIOUS_AW2_2024/AW2_3.jpg",
-      "/images/MAMALICIOUS_AW2_2024/AW2_4.jpg",
-      "/images/MAMALICIOUS_AW2_2024/AW2_5.jpg",
-      "/images/MAMALICIOUS_AW2_2024/AW2_6.jpg",
-      "/images/MAMALICIOUS_AW2_2024/AW2_7.jpg"
+      "/images/MAMALICIOUS_AW2/AW2_1.jpg",
+      "/images/MAMALICIOUS_AW2/AW2_2.jpg",
+      "/images/MAMALICIOUS_AW2/AW2_3.jpg",
+      "/images/MAMALICIOUS_AW2/AW2_4.jpg",
+      "/images/MAMALICIOUS_AW2/AW2_5.jpg",
+      "/images/MAMALICIOUS_AW2/AW2_6.jpg",
+      "/images/MAMALICIOUS_AW2/AW2_7.jpg"
     ]
   },
 
