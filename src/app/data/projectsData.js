@@ -253,7 +253,7 @@ export const projectsData = {
   'YAS_SS4': {
     title: "YAS SS4",
     role: "Art Direction & Styling",
-    description: "A complete wardrobe transformation focusing on powerful, professional pieces...",
+    description: "Project in collaboration with: Matthew Minton, Vivi Søderholm, Sofie Liv Madsen, Ayse Demirhan",
     images: [
       "/images/YAS_SS4/SS4_10.jpg",
       "/images/YAS_SS4/SS4_6.jpg",
